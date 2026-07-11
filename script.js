@@ -48,6 +48,7 @@ const I18N = {
   about_p1: "El Nuclear Alternative Project (NAP) es una organización sin fines de lucro 501(c)(3) creada por un grupo de ingenieros puertorriqueños que trabajan en la industria nuclear de EE. UU. Nos unimos en torno a una creencia compartida: Puerto Rico merece un futuro energético limpio, asequible y lo suficientemente fuerte para resistir la próxima tormenta.",
   about_p2: "Nuestra misión es educar a las comunidades de Puerto Rico sobre la energía nuclear de una manera que facilite el intercambio libre y abierto de información, para que las decisiones sobre el futuro energético de la isla se tomen con hechos, no con miedo.",
   about_quote: "«Un Puerto Rico fuerte y moderno, impulsado por una cartera de energía limpia que incluya la nuclear.»",
+  about_photo_cap: "El equipo de NAP — ingenieros puertorriqueños detrás de la misión",
   value1_t: "Educar", value1_p: "Información clara y honesta sobre la energía nuclear avanzada para comunidades, estudiantes y líderes.",
   value2_t: "Estudiar", value2_p: "Investigación rigurosa de viabilidad y emplazamiento financiada por el DOE y fundamentada en la ingeniería.",
   value3_t: "Empoderar", value3_p: "Dar a los puertorriqueños las herramientas para forjar un futuro energético resiliente y autosuficiente.",

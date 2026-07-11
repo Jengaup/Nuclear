@@ -261,6 +261,19 @@ html[data-theme="light"] .pull-quote { background: var(--panel-2); }
 /* generic card tag (mono) */
 .card-tag { color: var(--cyan); display: block; margin-bottom: 12px; }
 
+/* about photo */
+.photo-figure { margin: 0; }
+.photo-frame {
+  position: relative; border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 10px; background: var(--panel-2); box-shadow: var(--shadow);
+}
+.photo-frame img { display: block; width: 100%; height: auto; border-radius: 2px; }
+.photo-cap {
+  margin: 12px 2px 0; font-family: var(--font-mono); font-size: .72rem;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+}
+.about-cards-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 42px; }
+
 /* about cards */
 .about-cards { display: grid; gap: 14px; }
 .mini-card {
@@ -499,6 +512,7 @@ html:not(.no-js) .reveal.in { opacity: 1; transform: none; }
   .grid-2 { grid-template-columns: 1fr; gap: 40px; }
   .challenge-grid { grid-template-columns: repeat(2, 1fr); }
   .tech-grid, .involve-grid { grid-template-columns: 1fr; }
+  .about-cards-row { grid-template-columns: 1fr; }
   .res-grid { grid-template-columns: repeat(2, 1fr); }
   .readout { grid-template-columns: repeat(2, 1fr); }
   .ro-item:nth-child(2) { border-right: none; }
