@@ -8,6 +8,23 @@ const I18N = {
   nav_about: "Nosotros", nav_challenge: "El Reto", nav_work: "Trabajo",
   nav_tech: "Tecnología", nav_sites: "Emplazamientos", nav_faq: "Preguntas",
   nav_involved: "Participa", nav_donate: "Donar",
+  nav_film: "Video", nav_resources: "Recursos",
+
+  film_eyebrow: "Película de archivo",
+  film_title: "La historia nuclear de Puerto Rico, en película",
+  film_lead: "La energía nuclear en Puerto Rico no es nueva. Este documental de 1967 sigue al reactor BONUS — la central Boiling Nuclear Superheat en Rincón — una planta pionera construida en la isla. Es la historia sobre la que se construye la visión actual de reactores avanzados.",
+  film_cap: "FIG. 02 — Reactor BONUS · Rincón, Puerto Rico · 1967",
+  film_watch: "Ver en YouTube ↗",
+
+  res_eyebrow: "Recursos y Noticias",
+  res_title: "Explora la investigación",
+  res_lead: "Todo lo que NAP ha publicado, además de cobertura del Departamento de Energía de EE. UU. y laboratorios nacionales. Todos los enlaces abren las fuentes oficiales.",
+  res1_t: "Biblioteca de recursos", res1_p: "La biblioteca pública de NAP con datos e informes sobre energía nuclear para Puerto Rico.",
+  res2_t: "Estudio de viabilidad del DOE", res2_p: "El resumen del Departamento de Energía sobre el estudio de viabilidad de SMR y microrreactores.",
+  res3_t: "Idaho National Laboratory", res3_p: "«Llevando energía resiliente a Puerto Rico con microrreactores».",
+  res4_t: "Nuestro Trabajo", res4_p: "Los proyectos, fases y avances de NAP hacia la energía nuclear avanzada para la isla.",
+  res5_t: "Nuclear para Puerto Rico", res5_p: "Por qué la nuclear avanzada encaja con las necesidades de energía y resiliencia de la isla.",
+  res6_t: "Nosotros y el Equipo", res6_p: "Conoce a los ingenieros puertorriqueños detrás del Nuclear Alternative Project.",
 
   fig_label: "FIG. 01 — REACTOR AVANZADO",
   ann_core: "NÚCLEO", ann_containment: "CONTENCIÓN", ann_footprint: "HUELLA COMPACTA",
