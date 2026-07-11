@@ -5,13 +5,19 @@
 /* ---------- Spanish translations ---------- */
 const I18N = {
   skip: "Saltar al contenido",
-  nav_about: "Nosotros", nav_challenge: "El Reto", nav_work: "Nuestro Trabajo",
+  nav_about: "Nosotros", nav_challenge: "El Reto", nav_work: "Trabajo",
   nav_tech: "Tecnología", nav_sites: "Emplazamientos", nav_faq: "Preguntas",
   nav_involved: "Participa", nav_donate: "Donar",
 
+  fig_label: "FIG. 01 — REACTOR AVANZADO",
+  ann_core: "NÚCLEO", ann_containment: "CONTENCIÓN", ann_footprint: "HUELLA COMPACTA",
+  news_kicker: "Señal · Boletín", cta_kicker: "Canal abierto",
+  tb_status_l: "Estado", tb_status_v: "Organización sin fines de lucro 501(c)(3)",
+  tb_est_l: "Fundada", tb_loc_l: "Ubicación", tb_loc_v: "Puerto Rico · EE.UU.",
+
   hero_eyebrow: "Sin fines de lucro · Fundada en 2015 · Por ingenieros puertorriqueños",
   hero_title_1: "Energía limpia y resiliente",
-  hero_title_2: "para el futuro de Puerto Rico",
+  hero_title_2: "diseñada para Puerto Rico",
   hero_sub: "Somos una organización sin fines de lucro que une a ingenieros puertorriqueños de toda la industria nuclear de EE. UU. con una sola misión: estudiar y educar sobre los reactores nucleares avanzados como una alternativa de energía limpia, confiable y resiliente para la isla.",
   hero_cta1: "Conoce nuestro trabajo",
   hero_cta2: "Apoya la misión",

@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nuclear Alternative Project — Clean, Resilient Energy for Puerto Rico</title>
   <meta name="description" content="The Nuclear Alternative Project (NAP) is a nonprofit of Puerto Rican engineers studying and educating about advanced nuclear reactors — small modular reactors (SMRs) and microreactors — for a clean, resilient Puerto Rico." />
-  <meta name="theme-color" content="#0a1a35" />
+  <meta name="theme-color" content="#071c33" />
   <meta property="og:title" content="Nuclear Alternative Project" />
   <meta property="og:description" content="Clean, resilient, reliable energy for Puerto Rico through advanced nuclear technology." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230a1a35'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%2337e0c8'/%3E%3Cg fill='none' stroke='%2337e0c8' stroke-width='6'%3E%3Cellipse cx='50' cy='50' rx='34' ry='13'/%3E%3Cellipse cx='50' cy='50' rx='34' ry='13' transform='rotate(60 50 50)'/%3E%3Cellipse cx='50' cy='50' rx='34' ry='13' transform='rotate(120 50 50)'/%3E%3C/g%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23071c33'/%3E%3Ccircle cx='50' cy='50' r='7' fill='%2357e6d9'/%3E%3Cg fill='none' stroke='%2357e6d9' stroke-width='4'%3E%3Cellipse cx='50' cy='50' rx='32' ry='12'/%3E%3Cellipse cx='50' cy='50' rx='32' ry='12' transform='rotate(60 50 50)'/%3E%3Cellipse cx='50' cy='50' rx='32' ry='12' transform='rotate(120 50 50)'/%3E%3C/g%3E%3C/svg%3E" />
 </head>
 <body>
   <script>document.documentElement.classList.remove("no-js");</script>
@@ -24,16 +24,16 @@
     <div class="container nav-inner">
       <a href="#top" class="brand" aria-label="Nuclear Alternative Project home">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 100 100" width="34" height="34">
-            <circle cx="50" cy="50" r="9" fill="currentColor"/>
-            <g fill="none" stroke="currentColor" stroke-width="7">
-              <ellipse cx="50" cy="50" rx="36" ry="14"/>
-              <ellipse cx="50" cy="50" rx="36" ry="14" transform="rotate(60 50 50)"/>
-              <ellipse cx="50" cy="50" rx="36" ry="14" transform="rotate(120 50 50)"/>
+          <svg viewBox="0 0 100 100" width="30" height="30">
+            <circle cx="50" cy="50" r="8" fill="currentColor"/>
+            <g fill="none" stroke="currentColor" stroke-width="6">
+              <ellipse cx="50" cy="50" rx="34" ry="13"/>
+              <ellipse cx="50" cy="50" rx="34" ry="13" transform="rotate(60 50 50)"/>
+              <ellipse cx="50" cy="50" rx="34" ry="13" transform="rotate(120 50 50)"/>
             </g>
           </svg>
         </span>
-        <span class="brand-text">Nuclear Alternative Project</span>
+        <span class="brand-text">Nuclear<span class="brand-alt">Alternative</span>Project</span>
       </a>
 
       <nav class="main-nav" aria-label="Primary">
@@ -41,13 +41,11 @@
           <span></span><span></span><span></span>
         </button>
         <ul id="nav-links" class="nav-links">
-          <li><a href="#about" data-i18n="nav_about">About</a></li>
-          <li><a href="#challenge" data-i18n="nav_challenge">The Challenge</a></li>
-          <li><a href="#work" data-i18n="nav_work">Our Work</a></li>
-          <li><a href="#technology" data-i18n="nav_tech">Technology</a></li>
-          <li><a href="#sites" data-i18n="nav_sites">Sites</a></li>
-          <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
-          <li><a href="#involved" data-i18n="nav_involved">Get Involved</a></li>
+          <li><a href="#about"><span class="nav-idx">01</span> <span data-i18n="nav_about">About</span></a></li>
+          <li><a href="#work"><span class="nav-idx">03</span> <span data-i18n="nav_work">Work</span></a></li>
+          <li><a href="#technology"><span class="nav-idx">04</span> <span data-i18n="nav_tech">Technology</span></a></li>
+          <li><a href="#sites"><span class="nav-idx">05</span> <span data-i18n="nav_sites">Sites</span></a></li>
+          <li><a href="#faq"><span class="nav-idx">06</span> <span data-i18n="nav_faq">FAQ</span></a></li>
           <li class="nav-controls">
             <button id="lang-toggle" class="pill-btn" aria-label="Switch language">ES</button>
             <button id="theme-toggle" class="pill-btn" aria-label="Toggle dark mode">
@@ -62,42 +60,102 @@
   </header>
 
   <main id="main">
-    <!-- ===== HERO ===== -->
+    <!-- ===== HERO: BLUEPRINT SHEET ===== -->
     <section class="hero">
-      <div class="hero-bg" aria-hidden="true">
-        <div class="orbit-glow"></div>
-        <div class="grid-lines"></div>
-      </div>
+      <div class="sheet-grid" aria-hidden="true"></div>
+      <span class="reg-mark rm-tl" aria-hidden="true"></span>
+      <span class="reg-mark rm-tr" aria-hidden="true"></span>
+      <span class="reg-mark rm-bl" aria-hidden="true"></span>
+      <span class="reg-mark rm-br" aria-hidden="true"></span>
+
       <div class="container hero-inner">
-        <p class="eyebrow" data-i18n="hero_eyebrow">Nonprofit · Founded 2015 · By Puerto Rican engineers</p>
-        <h1 class="hero-title">
-          <span data-i18n="hero_title_1">Clean, resilient energy</span><br />
-          <span class="grad-text" data-i18n="hero_title_2">for the future of Puerto Rico</span>
-        </h1>
-        <p class="hero-sub" data-i18n="hero_sub">
-          We are a nonprofit uniting Puerto Rican engineers from across the U.S. nuclear
-          industry under one mission: to study and educate about advanced nuclear reactors
-          as a clean, reliable, and resilient energy alternative for the island.
-        </p>
-        <div class="hero-cta">
-          <a href="#work" class="btn btn-primary" data-i18n="hero_cta1">Explore our work</a>
-          <a href="#involved" class="btn btn-ghost" data-i18n="hero_cta2">Support the mission</a>
+        <div class="hero-copy">
+          <p class="mono-eyebrow" data-i18n="hero_eyebrow">Nonprofit · Est. 2015 · Puerto Rican engineers</p>
+          <h1 class="hero-title">
+            <span data-i18n="hero_title_1">Clean, resilient energy</span>
+            <span class="glow-word" data-i18n="hero_title_2">engineered for Puerto Rico</span>
+          </h1>
+          <p class="hero-sub" data-i18n="hero_sub">
+            We are a nonprofit uniting Puerto Rican engineers from across the U.S. nuclear
+            industry under one mission: to study and educate about advanced nuclear reactors
+            as a clean, reliable, and resilient energy alternative for the island.
+          </p>
+          <div class="hero-cta">
+            <a href="#work" class="btn btn-primary" data-i18n="hero_cta1">Explore our work</a>
+            <a href="#involved" class="btn btn-ghost" data-i18n="hero_cta2">Support the mission</a>
+          </div>
         </div>
 
-        <dl class="hero-stats" aria-label="Key facts">
-          <div class="stat">
+        <!-- Signature element: annotated reactor schematic -->
+        <figure class="reactor-fig" aria-label="Annotated schematic of an advanced nuclear reactor">
+          <figcaption class="fig-cap"><span data-i18n="fig_label">FIG. 01 — ADVANCED REACTOR</span></figcaption>
+          <svg viewBox="0 0 360 360" class="reactor" role="img">
+            <defs>
+              <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="var(--cyan)" stop-opacity="0.95"/>
+                <stop offset="55%" stop-color="var(--cyan)" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="var(--cyan)" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <!-- containment rings -->
+            <circle cx="180" cy="180" r="140" class="rf-line rf-dash"/>
+            <circle cx="180" cy="180" r="110" class="rf-line"/>
+            <circle cx="180" cy="180" r="78" class="rf-line rf-faint"/>
+            <!-- orbits -->
+            <g class="orbits">
+              <ellipse cx="180" cy="180" rx="140" ry="52" class="rf-orbit"/>
+              <ellipse cx="180" cy="180" rx="140" ry="52" class="rf-orbit" transform="rotate(60 180 180)"/>
+              <ellipse cx="180" cy="180" rx="140" ry="52" class="rf-orbit" transform="rotate(120 180 180)"/>
+              <circle r="5" class="electron e1"/>
+              <circle r="5" class="electron e2"/>
+              <circle r="5" class="electron e3"/>
+            </g>
+            <!-- glowing core -->
+            <circle cx="180" cy="180" r="60" fill="url(#coreGlow)" class="core-glow"/>
+            <g class="core-cells">
+              <rect x="164" y="164" width="14" height="14" rx="2"/>
+              <rect x="182" y="164" width="14" height="14" rx="2"/>
+              <rect x="164" y="182" width="14" height="14" rx="2"/>
+              <rect x="182" y="182" width="14" height="14" rx="2"/>
+            </g>
+            <!-- dimension line -->
+            <g class="dim">
+              <line x1="40" y1="330" x2="320" y2="330"/>
+              <line x1="40" y1="324" x2="40" y2="336"/>
+              <line x1="320" y1="324" x2="320" y2="336"/>
+            </g>
+            <!-- leader annotations (kept inside viewBox, end-anchored) -->
+            <g class="leader">
+              <line x1="180" y1="180" x2="300" y2="104"/>
+              <circle cx="180" cy="180" r="2.5"/>
+              <text x="300" y="98" class="ann" text-anchor="end" data-i18n="ann_core">CORE</text>
+            </g>
+            <g class="leader">
+              <line x1="234" y1="126" x2="300" y2="150"/>
+              <circle cx="234" cy="126" r="2.5"/>
+              <text x="300" y="168" class="ann" text-anchor="end" data-i18n="ann_containment">CONTAINMENT</text>
+            </g>
+            <text x="180" y="348" class="ann dim-label" text-anchor="middle" data-i18n="ann_footprint">COMPACT FOOTPRINT</text>
+          </svg>
+        </figure>
+      </div>
+
+      <!-- Control-panel readout of key figures -->
+      <div class="container">
+        <dl class="readout" aria-label="Key facts">
+          <div class="ro-item">
             <dt class="stat-num" data-count="74" data-suffix="%">0%</dt>
-            <dd data-i18n="stat_74">of Puerto Rico's power plants could be replaced by SMRs</dd>
+            <dd data-i18n="stat_74">of Puerto Rico's power plants replaceable by SMRs</dd>
           </div>
-          <div class="stat">
+          <div class="ro-item">
             <dt class="stat-num" data-count="1.6" data-prefix="$" data-suffix="M" data-decimals="1">$0M</dt>
-            <dd data-i18n="stat_grant">in DOE funding awarded for a Phase 2 siting study</dd>
+            <dd data-i18n="stat_grant">in DOE funding for a Phase 2 siting study</dd>
           </div>
-          <div class="stat">
+          <div class="ro-item">
             <dt class="stat-num" data-count="2" data-suffix="">0</dt>
             <dd data-i18n="stat_sites">candidate sites identified under NRC criteria</dd>
           </div>
-          <div class="stat">
+          <div class="ro-item">
             <dt class="stat-num" data-count="2015" data-plain="true">0</dt>
             <dd data-i18n="stat_year">the year our engineers first came together</dd>
           </div>
@@ -105,11 +163,11 @@
       </div>
     </section>
 
-    <!-- ===== ABOUT / MISSION ===== -->
+    <!-- ===== 01 · ABOUT ===== -->
     <section id="about" class="section">
       <div class="container grid-2">
         <div class="reveal">
-          <p class="section-eyebrow" data-i18n="about_eyebrow">Who we are</p>
+          <p class="kicker"><span class="idx">§ 01</span><span data-i18n="about_eyebrow">Who we are</span></p>
           <h2 class="section-title" data-i18n="about_title">Engineers from the island, for the island</h2>
           <p data-i18n="about_p1">
             The Nuclear Alternative Project (NAP) is a 501(c)(3) nonprofit created by a group of
@@ -129,17 +187,17 @@
         </div>
         <div class="reveal about-cards">
           <div class="mini-card">
-            <span class="mini-icon" aria-hidden="true">🎓</span>
+            <span class="card-tag">01 / EDU</span>
             <h3 data-i18n="value1_t">Educate</h3>
             <p data-i18n="value1_p">Clear, honest information about advanced nuclear for communities, students, and leaders.</p>
           </div>
           <div class="mini-card">
-            <span class="mini-icon" aria-hidden="true">🔬</span>
+            <span class="card-tag">02 / R&amp;D</span>
             <h3 data-i18n="value2_t">Study</h3>
             <p data-i18n="value2_p">Rigorous, DOE-funded feasibility and siting research grounded in engineering.</p>
           </div>
           <div class="mini-card">
-            <span class="mini-icon" aria-hidden="true">🤝</span>
+            <span class="card-tag">03 / PWR</span>
             <h3 data-i18n="value3_t">Empower</h3>
             <p data-i18n="value3_p">Giving Puerto Ricans the tools to shape a resilient, self-reliant energy future.</p>
           </div>
@@ -147,50 +205,38 @@
       </div>
     </section>
 
-    <!-- ===== THE CHALLENGE ===== -->
+    <!-- ===== 02 · THE CHALLENGE ===== -->
     <section id="challenge" class="section section-alt">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="section-eyebrow" data-i18n="challenge_eyebrow">The Challenge</p>
-          <h2 class="section-title" data-i18n="challenge_title">An energy grid pushed to its limits</h2>
+        <header class="section-head reveal">
+          <p class="head-rule"><span class="idx">§ 02</span><span class="head-eyebrow" data-i18n="challenge_eyebrow">The Challenge</span></p>
+          <h2 class="section-title" data-i18n="challenge_title">A grid pushed to its limits</h2>
           <p class="section-lead" data-i18n="challenge_lead">
             When Hurricane María struck in 2017, it exposed how fragile Puerto Rico's aging,
             fossil-fuel-dependent grid truly is. Rebuilding stronger means rethinking how the
             island generates power.
           </p>
-        </div>
+        </header>
         <div class="challenge-grid">
-          <div class="challenge-card reveal">
-            <h3 data-i18n="ch1_t">Imported fossil fuels</h3>
-            <p data-i18n="ch1_p">The island relies heavily on imported oil and gas, exposing families and industry to volatile, high electricity prices.</p>
-          </div>
-          <div class="challenge-card reveal">
-            <h3 data-i18n="ch2_t">Vulnerable to storms</h3>
-            <p data-i18n="ch2_p">Centralized plants and long transmission lines are easily knocked out — leaving communities dark for weeks after a hurricane.</p>
-          </div>
-          <div class="challenge-card reveal">
-            <h3 data-i18n="ch3_t">Clean-energy goals</h3>
-            <p data-i18n="ch3_p">Puerto Rico has committed to 100% renewable electricity — a goal that needs firm, carbon-free power to stay reliable day and night.</p>
-          </div>
-          <div class="challenge-card reveal">
-            <h3 data-i18n="ch4_t">Resilience by design</h3>
-            <p data-i18n="ch4_p">The path forward is a web of microgrids that can keep hospitals, water, and homes running when the grid goes down.</p>
-          </div>
+          <div class="challenge-card reveal"><span class="c-num">01</span><h3 data-i18n="ch1_t">Imported fossil fuels</h3><p data-i18n="ch1_p">The island relies heavily on imported oil and gas, exposing families and industry to volatile, high electricity prices.</p></div>
+          <div class="challenge-card reveal"><span class="c-num">02</span><h3 data-i18n="ch2_t">Vulnerable to storms</h3><p data-i18n="ch2_p">Centralized plants and long transmission lines are easily knocked out — leaving communities dark for weeks after a hurricane.</p></div>
+          <div class="challenge-card reveal"><span class="c-num">03</span><h3 data-i18n="ch3_t">Clean-energy goals</h3><p data-i18n="ch3_p">Puerto Rico has committed to 100% renewable electricity — a goal that needs firm, carbon-free power to stay reliable day and night.</p></div>
+          <div class="challenge-card reveal"><span class="c-num">04</span><h3 data-i18n="ch4_t">Resilience by design</h3><p data-i18n="ch4_p">The path forward is a web of microgrids that can keep hospitals, water, and homes running when the grid goes down.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- ===== OUR WORK / TIMELINE ===== -->
+    <!-- ===== 03 · OUR WORK / TIMELINE ===== -->
     <section id="work" class="section">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="section-eyebrow" data-i18n="work_eyebrow">Our Work</p>
+        <header class="section-head reveal">
+          <p class="head-rule"><span class="idx">§ 03</span><span class="head-eyebrow" data-i18n="work_eyebrow">Our Work</span></p>
           <h2 class="section-title" data-i18n="work_title">From an idea to a national research effort</h2>
           <p class="section-lead" data-i18n="work_lead">
             What began as volunteer engineers sharing a vision is now a multi-year program funded
             by the U.S. Department of Energy and supported by national laboratories.
           </p>
-        </div>
+        </header>
 
         <ol class="timeline">
           <li class="reveal">
@@ -225,22 +271,22 @@
       </div>
     </section>
 
-    <!-- ===== TECHNOLOGY ===== -->
+    <!-- ===== 04 · TECHNOLOGY ===== -->
     <section id="technology" class="section section-alt">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="section-eyebrow" data-i18n="tech_eyebrow">The Technology</p>
+        <header class="section-head reveal">
+          <p class="head-rule"><span class="idx">§ 04</span><span class="head-eyebrow" data-i18n="tech_eyebrow">The Technology</span></p>
           <h2 class="section-title" data-i18n="tech_title">Advanced reactors, right-sized for an island</h2>
           <p class="section-lead" data-i18n="tech_lead">
             Modern nuclear isn't the giant plants of the past. Advanced reactors are smaller,
             factory-built, and designed to be inherently safe — a natural fit for Puerto Rico's
             grid and geography.
           </p>
-        </div>
+        </header>
 
         <div class="tech-grid">
           <article class="tech-card reveal">
-            <div class="tech-badge" data-i18n="tech1_badge">Small Modular Reactor</div>
+            <div class="tech-spec"><span class="tech-badge" data-i18n="tech1_badge">Small Modular Reactor</span><span class="tech-rating">≤ 300 MW</span></div>
             <h3>SMR</h3>
             <p data-i18n="tech1_p">Reactors up to ~300 MW per unit, built in factories and shipped to site. Scalable to match demand and ideal for replacing retiring fossil plants.</p>
             <ul class="tech-list">
@@ -251,7 +297,7 @@
           </article>
 
           <article class="tech-card reveal featured">
-            <div class="tech-badge" data-i18n="tech2_badge">Microreactor</div>
+            <div class="tech-spec"><span class="tech-badge" data-i18n="tech2_badge">Microreactor</span><span class="tech-rating">≤ 20 MW</span></div>
             <h3>Micro</h3>
             <p data-i18n="tech2_p">Very small reactors (often under 20 MW) that can power a hospital, a town, or a microgrid — and keep running when the main grid fails.</p>
             <ul class="tech-list">
@@ -262,7 +308,7 @@
           </article>
 
           <article class="tech-card reveal">
-            <div class="tech-badge" data-i18n="tech3_badge">Why it fits</div>
+            <div class="tech-spec"><span class="tech-badge" data-i18n="tech3_badge">Why it fits</span><span class="tech-rating">24 / 7</span></div>
             <h3 data-i18n="tech3_h">Resilience</h3>
             <p data-i18n="tech3_p">Distributed advanced reactors complement a solar-dominated grid, stabilize prices for the manufacturing economy, and stay standing through hurricane season.</p>
             <ul class="tech-list">
@@ -275,11 +321,11 @@
       </div>
     </section>
 
-    <!-- ===== SITES ===== -->
+    <!-- ===== 05 · SITES ===== -->
     <section id="sites" class="section">
       <div class="container grid-2 sites-layout">
         <div class="reveal">
-          <p class="section-eyebrow" data-i18n="sites_eyebrow">Candidate Sites</p>
+          <p class="kicker"><span class="idx">§ 05</span><span data-i18n="sites_eyebrow">Candidate Sites</span></p>
           <h2 class="section-title" data-i18n="sites_title">Two locations under study</h2>
           <p data-i18n="sites_lead">
             Applying Nuclear Regulatory Commission criteria — geology and seismology, weather,
@@ -288,14 +334,14 @@
           </p>
           <div class="site-list">
             <div class="site-item">
-              <span class="site-dot dot-north" aria-hidden="true"></span>
+              <span class="site-tag dot-north">N</span>
               <div>
                 <h3 data-i18n="site1_t">North Coast · near Manatí</h3>
                 <p data-i18n="site1_p">Close to an established industrial hub on the island's north shore.</p>
               </div>
             </div>
             <div class="site-item">
-              <span class="site-dot dot-east" aria-hidden="true"></span>
+              <span class="site-tag dot-east">E</span>
               <div>
                 <h3 data-i18n="site2_t">East Coast · Roosevelt Roads</h3>
                 <p data-i18n="site2_p">The former Roosevelt Roads Naval Station, with existing infrastructure and access.</p>
@@ -304,99 +350,89 @@
           </div>
         </div>
 
-        <div class="reveal map-wrap" aria-hidden="true">
-          <svg viewBox="0 0 400 200" class="pr-map" role="img" aria-label="Stylized map of Puerto Rico with two candidate sites">
-            <defs>
-              <linearGradient id="island" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#16324f"/>
-                <stop offset="1" stop-color="#0f2740"/>
-              </linearGradient>
-            </defs>
-            <path d="M30 120 C60 90 110 82 160 86 C210 90 260 82 320 92 C355 98 378 108 372 128 C365 150 320 158 260 156 C200 154 150 162 100 156 C60 151 20 146 30 120 Z"
-                  fill="url(#island)" stroke="#37e0c8" stroke-width="1.5" stroke-opacity="0.5"/>
-            <g class="map-marker marker-north">
-              <circle cx="150" cy="100" r="7" class="marker-core dot-north-fill"/>
-              <circle cx="150" cy="100" r="7" class="marker-ping"/>
-            </g>
-            <g class="map-marker marker-east">
-              <circle cx="330" cy="118" r="7" class="marker-core dot-east-fill"/>
-              <circle cx="330" cy="118" r="7" class="marker-ping"/>
-            </g>
-            <text x="150" y="82" class="map-label" text-anchor="middle">Manatí</text>
-            <text x="330" y="140" class="map-label" text-anchor="middle">Roosevelt Rds</text>
-          </svg>
-          <p class="map-note" data-i18n="map_note">Illustrative map — for reference only.</p>
+        <div class="reveal map-wrap">
+          <div class="map-frame">
+            <span class="map-corner mc-tl"></span><span class="map-corner mc-tr"></span>
+            <span class="map-corner mc-bl"></span><span class="map-corner mc-br"></span>
+            <svg viewBox="0 0 400 210" class="pr-map" role="img" aria-label="Stylized map of Puerto Rico with two candidate sites">
+              <path d="M30 128 C60 96 112 88 162 92 C212 96 262 88 322 98 C356 104 380 114 372 134 C364 156 320 164 260 162 C200 160 150 168 100 162 C60 157 20 152 30 128 Z"
+                    class="island"/>
+              <!-- coordinate grid -->
+              <g class="map-grid">
+                <line x1="120" y1="70" x2="120" y2="180"/><line x1="200" y1="70" x2="200" y2="180"/><line x1="280" y1="70" x2="280" y2="180"/>
+                <line x1="60" y1="128" x2="360" y2="128"/>
+              </g>
+              <g class="map-marker marker-north">
+                <line x1="150" y1="70" x2="150" y2="102" class="marker-stem"/>
+                <circle cx="150" cy="106" r="6" class="marker-core dot-north-fill"/>
+                <circle cx="150" cy="106" r="6" class="marker-ping"/>
+                <text x="150" y="62" class="map-label" text-anchor="middle">MANATÍ · N</text>
+              </g>
+              <g class="map-marker marker-east">
+                <line x1="330" y1="124" x2="330" y2="150" class="marker-stem stem-east"/>
+                <circle cx="330" cy="120" r="6" class="marker-core dot-east-fill"/>
+                <circle cx="330" cy="120" r="6" class="marker-ping"/>
+                <text x="330" y="166" class="map-label" text-anchor="middle">RSVLT RDS · E</text>
+              </g>
+            </svg>
+          </div>
+          <p class="map-note"><span data-i18n="map_note">Illustrative map — for reference only.</span> <span class="mono">18.2°N · 66.4°W</span></p>
         </div>
       </div>
     </section>
 
-    <!-- ===== FAQ ===== -->
+    <!-- ===== 06 · FAQ ===== -->
     <section id="faq" class="section section-alt">
       <div class="container narrow">
-        <div class="section-head reveal">
-          <p class="section-eyebrow" data-i18n="faq_eyebrow">Straight Answers</p>
+        <header class="section-head reveal">
+          <p class="head-rule"><span class="idx">§ 06</span><span class="head-eyebrow" data-i18n="faq_eyebrow">Straight Answers</span></p>
           <h2 class="section-title" data-i18n="faq_title">Nuclear, honestly</h2>
           <p class="section-lead" data-i18n="faq_lead">The questions people ask us most — answered plainly.</p>
-        </div>
+        </header>
 
         <div class="faq-list">
-          <details class="faq-item reveal">
-            <summary data-i18n="faq1_q">Is nuclear energy safe?</summary>
-            <p data-i18n="faq1_a">Nuclear is one of the safest ways to make electricity. Advanced reactors add passive safety features that shut the reactor down naturally — without operators or external power — making a serious accident extremely unlikely.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary data-i18n="faq2_q">What about nuclear waste?</summary>
-            <p data-i18n="faq2_a">Modern reactors produce small volumes of waste that are safely contained and monitored. Many advanced designs use fuel far more efficiently, and the total waste from decades of operation is remarkably compact.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary data-i18n="faq3_q">Can reactors survive a hurricane?</summary>
-            <p data-i18n="faq3_a">Yes. Reactors are among the most storm-hardened structures ever built, engineered to withstand extreme winds, flooding, and seismic events — and to keep delivering power when the rest of the grid is down.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary data-i18n="faq4_q">Does this replace solar and wind?</summary>
-            <p data-i18n="faq4_a">No — it complements them. Advanced nuclear provides firm, round-the-clock power that pairs with Puerto Rico's growing solar to create a clean grid that stays reliable even at night or during storms.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary data-i18n="faq5_q">Is this actually happening?</summary>
-            <p data-i18n="faq5_a">NAP's work is research and education. Any deployment would require extensive study, community input, and regulatory approval. Our role is to provide the facts so Puerto Rico can decide for itself.</p>
-          </details>
+          <details class="faq-item reveal"><summary data-i18n="faq1_q">Is nuclear energy safe?</summary><p data-i18n="faq1_a">Nuclear is one of the safest ways to make electricity. Advanced reactors add passive safety features that shut the reactor down naturally — without operators or external power — making a serious accident extremely unlikely.</p></details>
+          <details class="faq-item reveal"><summary data-i18n="faq2_q">What about nuclear waste?</summary><p data-i18n="faq2_a">Modern reactors produce small volumes of waste that are safely contained and monitored. Many advanced designs use fuel far more efficiently, and the total waste from decades of operation is remarkably compact.</p></details>
+          <details class="faq-item reveal"><summary data-i18n="faq3_q">Can reactors survive a hurricane?</summary><p data-i18n="faq3_a">Yes. Reactors are among the most storm-hardened structures ever built, engineered to withstand extreme winds, flooding, and seismic events — and to keep delivering power when the rest of the grid is down.</p></details>
+          <details class="faq-item reveal"><summary data-i18n="faq4_q">Does this replace solar and wind?</summary><p data-i18n="faq4_a">No — it complements them. Advanced nuclear provides firm, round-the-clock power that pairs with Puerto Rico's growing solar to create a clean grid that stays reliable even at night or during storms.</p></details>
+          <details class="faq-item reveal"><summary data-i18n="faq5_q">Is this actually happening?</summary><p data-i18n="faq5_a">NAP's work is research and education. Any deployment would require extensive study, community input, and regulatory approval. Our role is to provide the facts so Puerto Rico can decide for itself.</p></details>
         </div>
       </div>
     </section>
 
-    <!-- ===== GET INVOLVED ===== -->
+    <!-- ===== 07 · GET INVOLVED ===== -->
     <section id="involved" class="section">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="section-eyebrow" data-i18n="inv_eyebrow">Get Involved</p>
+        <header class="section-head reveal">
+          <p class="head-rule"><span class="idx">§ 07</span><span class="head-eyebrow" data-i18n="inv_eyebrow">Get Involved</span></p>
           <h2 class="section-title" data-i18n="inv_title">Help build Puerto Rico's energy future</h2>
           <p class="section-lead" data-i18n="inv_lead">As a nonprofit, we run on community support. There's a place for everyone in this mission.</p>
-        </div>
+        </header>
 
         <div class="involve-grid">
           <div class="involve-card reveal">
-            <span class="mini-icon" aria-hidden="true">❤️</span>
+            <span class="card-tag">A / GIVE</span>
             <h3 data-i18n="inv1_t">Donate</h3>
             <p data-i18n="inv1_p">Fund independent research and education. Every contribution to our 501(c)(3) is tax-deductible.</p>
             <a href="mailto:info@nuclearalternativeproject.org?subject=Donation" class="btn btn-primary btn-sm" data-i18n="inv1_cta">Donate</a>
           </div>
           <div class="involve-card reveal">
-            <span class="mini-icon" aria-hidden="true">🙋</span>
+            <span class="card-tag">B / JOIN</span>
             <h3 data-i18n="inv2_t">Volunteer</h3>
             <p data-i18n="inv2_p">Engineers, educators, translators, and community organizers — we'd love your talents.</p>
             <a href="mailto:info@nuclearalternativeproject.org?subject=Volunteer" class="btn btn-ghost btn-sm" data-i18n="inv2_cta">Join us</a>
           </div>
           <div class="involve-card reveal">
-            <span class="mini-icon" aria-hidden="true">📣</span>
+            <span class="card-tag">C / TELL</span>
             <h3 data-i18n="inv3_t">Spread the word</h3>
             <p data-i18n="inv3_p">Share our research, invite us to speak, or start a conversation in your community.</p>
             <a href="#top" class="btn btn-ghost btn-sm" data-i18n="inv3_cta">Learn more</a>
           </div>
         </div>
 
-        <!-- Newsletter -->
         <div class="newsletter reveal">
           <div>
+            <p class="mono-eyebrow" data-i18n="news_kicker">Signal · Newsletter</p>
             <h3 data-i18n="news_t">Stay informed</h3>
             <p data-i18n="news_p">Get occasional updates on our research and Puerto Rico's energy future.</p>
           </div>
@@ -412,7 +448,9 @@
 
     <!-- ===== CONTACT / CTA ===== -->
     <section id="contact" class="section cta-band">
+      <div class="sheet-grid" aria-hidden="true"></div>
       <div class="container cta-inner reveal">
+        <p class="mono-eyebrow" data-i18n="cta_kicker">Open channel</p>
         <h2 data-i18n="cta_title">Questions about nuclear for Puerto Rico?</h2>
         <p data-i18n="cta_p">We're always glad to talk with communities, students, journalists, and decision-makers.</p>
         <a href="mailto:info@nuclearalternativeproject.org" class="btn btn-primary btn-lg">info@nuclearalternativeproject.org</a>
@@ -425,12 +463,12 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 100 100" width="30" height="30">
-            <circle cx="50" cy="50" r="9" fill="currentColor"/>
-            <g fill="none" stroke="currentColor" stroke-width="7">
-              <ellipse cx="50" cy="50" rx="36" ry="14"/>
-              <ellipse cx="50" cy="50" rx="36" ry="14" transform="rotate(60 50 50)"/>
-              <ellipse cx="50" cy="50" rx="36" ry="14" transform="rotate(120 50 50)"/>
+          <svg viewBox="0 0 100 100" width="28" height="28">
+            <circle cx="50" cy="50" r="8" fill="currentColor"/>
+            <g fill="none" stroke="currentColor" stroke-width="6">
+              <ellipse cx="50" cy="50" rx="34" ry="13"/>
+              <ellipse cx="50" cy="50" rx="34" ry="13" transform="rotate(60 50 50)"/>
+              <ellipse cx="50" cy="50" rx="34" ry="13" transform="rotate(120 50 50)"/>
             </g>
           </svg>
         </span>
@@ -441,7 +479,7 @@
       <nav class="footer-col" aria-label="Footer">
         <h4 data-i18n="foot_explore">Explore</h4>
         <a href="#about" data-i18n="nav_about">About</a>
-        <a href="#work" data-i18n="nav_work">Our Work</a>
+        <a href="#work" data-i18n="nav_work">Work</a>
         <a href="#technology" data-i18n="nav_tech">Technology</a>
         <a href="#faq" data-i18n="nav_faq">FAQ</a>
       </nav>
@@ -450,18 +488,21 @@
         <h4 data-i18n="foot_connect">Connect</h4>
         <a href="mailto:info@nuclearalternativeproject.org">Email</a>
         <div class="social">
-          <a href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M13 22v-8h2.7l.4-3H13V9c0-.9.3-1.5 1.6-1.5H16V4.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.7 1.4-3.7 3.9V11H7.5v3H10v8h3z"/></svg></a>
-          <a href="#" aria-label="X" title="X"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M18 2h3l-7 8 8 12h-6l-5-6-5 6H2l7-9L2 2h6l4 5 6-5zm-2 18h1.5L8 4H6l10 16z"/></svg></a>
-          <a href="#" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6.9 8v12H3V8h3.9zM5 3.5A2 2 0 1 1 5 7.5a2 2 0 0 1 0-4zM21 20h-3.9v-6.4c0-1.5-.5-2.5-1.9-2.5-1 0-1.6.7-1.9 1.4-.1.2-.1.6-.1.9V20H9.3s.1-11 0-12h3.9v1.7c.5-.8 1.4-1.9 3.5-1.9 2.6 0 4.5 1.7 4.5 5.3V20z"/></svg></a>
-          <a href="#" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M23 12s0-3.2-.4-4.7c-.2-.8-.9-1.5-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4c-.8.2-1.5.9-1.7 1.7C1 8.8 1 12 1 12s0 3.2.4 4.7c.2.8.9 1.5 1.7 1.7 1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4c.8-.2 1.5-.9 1.7-1.7.4-1.5.4-4.7.4-4.7zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg></a>
+          <a href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M13 22v-8h2.7l.4-3H13V9c0-.9.3-1.5 1.6-1.5H16V4.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.7 1.4-3.7 3.9V11H7.5v3H10v8h3z"/></svg></a>
+          <a href="#" aria-label="X" title="X"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M18 2h3l-7 8 8 12h-6l-5-6-5 6H2l7-9L2 2h6l4 5 6-5zm-2 18h1.5L8 4H6l10 16z"/></svg></a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6.9 8v12H3V8h3.9zM5 3.5A2 2 0 1 1 5 7.5a2 2 0 0 1 0-4zM21 20h-3.9v-6.4c0-1.5-.5-2.5-1.9-2.5-1 0-1.6.7-1.9 1.4-.1.2-.1.6-.1.9V20H9.3s.1-11 0-12h3.9v1.7c.5-.8 1.4-1.9 3.5-1.9 2.6 0 4.5 1.7 4.5 5.3V20z"/></svg></a>
+          <a href="#" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M23 12s0-3.2-.4-4.7c-.2-.8-.9-1.5-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4c-.8.2-1.5.9-1.7 1.7C1 8.8 1 12 1 12s0 3.2.4 4.7c.2.8.9 1.5 1.7 1.7 1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4c.8-.2 1.5-.9 1.7-1.7.4-1.5.4-4.7.4-4.7zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg></a>
         </div>
       </div>
 
-      <div class="footer-col">
+      <div class="footer-col titleblock">
         <h4 data-i18n="foot_org">Organization</h4>
-        <p class="foot-small" data-i18n="foot_501">501(c)(3) nonprofit</p>
-        <p class="foot-small">EIN 47-5353289</p>
-        <p class="foot-small" data-i18n="foot_pr">Puerto Rico · United States</p>
+        <dl class="tb-grid">
+          <dt data-i18n="tb_status_l">Status</dt><dd data-i18n="tb_status_v">501(c)(3) nonprofit</dd>
+          <dt>EIN</dt><dd>47-5353289</dd>
+          <dt data-i18n="tb_est_l">Established</dt><dd>2015</dd>
+          <dt data-i18n="tb_loc_l">Location</dt><dd data-i18n="tb_loc_v">Puerto Rico · USA</dd>
+        </dl>
       </div>
     </div>
     <div class="footer-bottom container">
