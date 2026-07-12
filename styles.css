@@ -356,6 +356,7 @@ html[data-theme="light"] .pull-quote { background: var(--panel-2); }
 .mc-bl { bottom: 8px; left: 8px; border-right: 0; border-top: 0; }
 .mc-br { bottom: 8px; right: 8px; border-left: 0; border-top: 0; }
 .pr-map { width: 100%; height: auto; overflow: visible; }
+.pr-map-img { display: block; width: 100%; height: auto; border-radius: 2px; }
 .island { fill: color-mix(in srgb, var(--cyan) 10%, transparent); stroke: var(--cyan); stroke-width: 1.2; stroke-opacity: .55; }
 .map-grid line { stroke: var(--border); stroke-width: 1; stroke-dasharray: 3 4; }
 .map-label { fill: var(--muted); }

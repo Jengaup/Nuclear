@@ -89,7 +89,7 @@ const I18N = {
   sites_lead: "Aplicando criterios de la Comisión Reguladora Nuclear (geología y sismología, clima, población, impacto ambiental y seguridad), el NAP ha identificado dos sitios prometedores en la isla.",
   site1_t: "Costa Norte · cerca de Manatí", site1_p: "Cerca de un centro industrial establecido en la costa norte de la isla.",
   site2_t: "Costa Este · Roosevelt Roads", site2_p: "La antigua Estación Naval Roosevelt Roads, con infraestructura y acceso existentes.",
-  map_note: "Mapa ilustrativo, solo como referencia.",
+  map_note: "Emplazamientos candidatos en Puerto Rico.",
 
   faq_eyebrow: "Respuestas Directas",
   faq_title: "La nuclear, con honestidad",
