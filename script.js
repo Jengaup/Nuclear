@@ -8,7 +8,12 @@ const I18N = {
   nav_about: "Nosotros", nav_challenge: "El Reto", nav_work: "Trabajo",
   nav_tech: "Tecnología", nav_sites: "Emplazamientos", nav_faq: "Preguntas",
   nav_involved: "Participa", nav_donate: "Donar",
-  nav_film: "Video", nav_resources: "Recursos",
+  nav_film: "Video", nav_resources: "Recursos", nav_partners: "Colaboradores",
+
+  partners_eyebrow: "Colaboradores",
+  partners_title: "Construido junto a socios de toda la industria",
+  partners_lead: "La investigación de NAP se impulsa gracias a una coalición de laboratorios nacionales, fabricantes de reactores, universidades, firmas legales y defensores — de Puerto Rico y de todo EE. UU.",
+  partners_note: "Nombres mostrados como texto en espera de los logos oficiales.",
 
   film_eyebrow: "Película de archivo",
   film_title: "La historia nuclear de Puerto Rico, en película",
