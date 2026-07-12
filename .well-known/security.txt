@@ -1,0 +1,5 @@
+# Security contact for the Nuclear Alternative Project website
+Contact: mailto:info@nuclearalternativeproject.org
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, es
+Canonical: https://jengaup.github.io/Nuclear/.well-known/security.txt
