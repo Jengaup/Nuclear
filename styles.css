@@ -420,6 +420,9 @@ html[data-theme="light"] .pull-quote { background: var(--panel-2); }
 .mv-card p { margin: 0; color: var(--muted); }
 
 .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.team-grid-4 { grid-template-columns: repeat(4, 1fr); }
+.team-grid-4 .person { text-align: center; }
+.team-grid-4 .person-avatar { margin-left: auto; margin-right: auto; }
 .person {
   background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 28px 24px; transition: transform .2s, border-color .2s;
