@@ -25,6 +25,17 @@ The newsletter form is a front-end demo only and does not transmit data.
 - **Referrer-Policy:** `strict-origin-when-cross-origin`.
 - **External links:** all `target="_blank"` links use `rel="noopener noreferrer"`
   to prevent reverse tabnabbing and referrer leakage.
+- **Anti-clickjacking:** because GitHub Pages cannot send `X-Frame-Options` or a
+  header-delivered `frame-ancestors`, a small hash-allow-listed frame-busting
+  script breaks the page out of any cross-origin frame (and hides content if the
+  break-out is blocked).
+- **Email obfuscation:** the contact address is never present as plain text in
+  the HTML; it is split across `data-*` attributes and assembled at runtime by
+  JavaScript, with a human-readable `info [at] …` fallback, to deter spam
+  harvesters.
+- **Crawler policy:** `robots.txt` welcomes search engines (Google, Bing,
+  DuckDuckGo, etc.) while disallowing bulk AI/LLM training and scraping bots
+  (GPTBot, ClaudeBot, CCBot, PerplexityBot, Bytespider, and others).
 - **Third-party embeds:** the YouTube player uses the privacy-enhanced
   `youtube-nocookie.com` domain with a scoped `allow` attribute.
 - **HTTPS:** served over TLS by GitHub Pages.

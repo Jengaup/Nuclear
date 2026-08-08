@@ -272,8 +272,19 @@ if (newsForm) newsForm.addEventListener("submit", (e) => {
   input.value = "";
 });
 
+/* ---------- Email obfuscation (assembled at runtime) ---------- */
+document.querySelectorAll(".js-mail").forEach((a) => {
+  const u = a.dataset.eu, d = a.dataset.ed;
+  if (!u || !d) return;
+  const addr = u + "@" + d;
+  const subj = a.dataset.subj;
+  a.setAttribute("href", "mailto:" + addr + (subj ? "?subject=" + encodeURIComponent(subj) : ""));
+  if (a.hasAttribute("data-show")) a.textContent = addr;
+});
+
 /* ---------- Year ---------- */
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 /* ---------- Init language ---------- */
 applyLang(lang);

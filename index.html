@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'sha256-XwWdy3h8RLzX10dUs9n/fCAkQc+XFysyIb7c80Ymdkw='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://static.wixstatic.com; frame-src https://www.youtube-nocookie.com https://www.youtube.com; connect-src 'self'; form-action 'self'; manifest-src 'self'; upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'sha256-5GkRLEhP9fP5WAdMvo4N77YqOK1QqJHjZqNgBh7iWgQ='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://static.wixstatic.com; frame-src https://www.youtube-nocookie.com https://www.youtube.com; connect-src 'self'; form-action 'self'; manifest-src 'self'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Nuclear Alternative Project — Clean, Resilient Energy for Puerto Rico</title>
   <meta name="description" content="The Nuclear Alternative Project (NAP) is a nonprofit of Puerto Rican engineers studying and educating about advanced nuclear reactors — small modular reactors (SMRs) and microreactors — for a clean, resilient Puerto Rico." />
@@ -20,7 +20,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 </head>
 <body>
-  <script>document.documentElement.classList.remove("no-js");</script>
+  <script>if(window.top!==window.self){try{window.top.location=window.self.location}catch(e){document.documentElement.style.display='none'}}document.documentElement.classList.remove('no-js');</script>
   <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
   <!-- ===== HEADER / NAV ===== -->
@@ -492,13 +492,13 @@
             <span class="card-tag">A / GIVE</span>
             <h3 data-i18n="inv1_t">Donate</h3>
             <p data-i18n="inv1_p">Fund independent research and education. Every contribution to our 501(c)(3) is tax-deductible.</p>
-            <a href="mailto:info@nuclearalternativeproject.org?subject=Donation" class="btn btn-primary btn-sm" data-i18n="inv1_cta">Donate</a>
+            <a href="#contact" class="btn btn-primary btn-sm js-mail" data-eu="info" data-ed="nuclearalternativeproject.org" data-subj="Donation" data-i18n="inv1_cta">Donate</a>
           </div>
           <div class="involve-card reveal">
             <span class="card-tag">B / JOIN</span>
             <h3 data-i18n="inv2_t">Volunteer</h3>
             <p data-i18n="inv2_p">Engineers, educators, translators, and community organizers — we'd love your talents.</p>
-            <a href="mailto:info@nuclearalternativeproject.org?subject=Volunteer" class="btn btn-ghost btn-sm" data-i18n="inv2_cta">Join us</a>
+            <a href="#contact" class="btn btn-ghost btn-sm js-mail" data-eu="info" data-ed="nuclearalternativeproject.org" data-subj="Volunteer" data-i18n="inv2_cta">Join us</a>
           </div>
           <div class="involve-card reveal">
             <span class="card-tag">C / TELL</span>
@@ -567,7 +567,7 @@
         <h2 data-i18n="cta_title">Questions about nuclear for Puerto Rico?</h2>
         <p data-i18n="cta_p">We're always glad to talk with communities, students, journalists, and decision-makers.</p>
         <div class="cta-actions">
-          <a href="mailto:info@nuclearalternativeproject.org" class="btn btn-primary btn-lg">info@nuclearalternativeproject.org</a>
+          <a class="btn btn-primary btn-lg js-mail" data-eu="info" data-ed="nuclearalternativeproject.org" data-show="1" href="#contact">info <span aria-hidden="true">[at]</span> nuclearalternativeproject.org</a>
           <a href="tel:+13014015167" class="btn btn-ghost btn-lg">(301) 401-5167</a>
         </div>
       </div>
@@ -592,7 +592,7 @@
 
       <div class="footer-col">
         <h4 data-i18n="foot_connect">Connect</h4>
-        <a href="mailto:info@nuclearalternativeproject.org">info@nuclearalternativeproject.org</a>
+        <a class="js-mail" data-eu="info" data-ed="nuclearalternativeproject.org" data-show="1" href="#contact">info [at] nuclearalternativeproject.org</a>
         <a href="tel:+13014015167">(301) 401-5167</a>
         <a href="https://www.nuclearalternativeproject.org/" target="_blank" rel="noopener noreferrer">nuclearalternativeproject.org ↗</a>
         <div class="social">
