@@ -164,6 +164,7 @@ const I18N = {
   foot_explore: "Explorar", foot_connect: "Conecta", foot_org: "Organización",
   foot_501: "Organización sin fines de lucro 501(c)(3)", foot_pr: "Puerto Rico · Estados Unidos",
   foot_rights: "Todos los derechos reservados.",
+  foot_privacy: "Privacidad", foot_terms: "Términos", foot_a11y: "Accesibilidad",
   foot_disc: "Sitio independiente creado por la comunidad, celebrando la misión del NAP."
 };
 

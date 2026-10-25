@@ -477,6 +477,35 @@ html[data-theme="light"] .pull-quote { background: var(--panel-2); }
 .fact dt { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
 .fact dd { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; color: var(--head); }
 
+/* ---------- Legal / long-form pages ---------- */
+/* Bilingual blocks: shown/hidden by the <html lang> the toggle sets.
+   With JS disabled the document stays lang="en", so the English copy shows. */
+html[lang="en"] [data-lang-block="es"] { display: none; }
+html[lang="es"] [data-lang-block="en"] { display: none; }
+
+.legal-prose { max-width: 760px; }
+.legal-prose h2 {
+  font-size: 1.35rem; margin: 40px 0 12px; padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.legal-prose h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 8px; }
+.legal-prose p, .legal-prose li { color: var(--text); }
+.legal-prose ul { padding-left: 20px; display: grid; gap: 8px; margin: 12px 0; }
+.legal-prose li::marker { color: var(--cyan-ink); }
+.legal-prose a { text-decoration: underline; text-underline-offset: 2px; }
+.legal-meta {
+  font-family: var(--font-mono); font-size: .76rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--muted); margin: 0 0 28px;
+}
+.legal-note {
+  border-left: 2px solid var(--coral-ink); background: var(--panel);
+  padding: 14px 18px; border-radius: 0 var(--radius) var(--radius) 0; margin: 20px 0;
+}
+.legal-note p { margin: 0; color: var(--muted); font-size: .94rem; }
+.footer-legal { margin: 0; }
+.footer-legal a { color: #a9c6de; }
+.footer-legal a:hover { color: var(--cyan); }
+
 /* ---------- Partners / collaborators ---------- */
 .partners-grid {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
