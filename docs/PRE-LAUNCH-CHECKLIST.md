@@ -8,8 +8,8 @@
 
 ## B. Claims validation
 - [ ] Scientific/regulatory claims reviewed by a NAP expert (SCIENTIFIC-CLAIMS-AUDIT.md); approved wording for #1, #2, #3, #6, #8, #10, #14, #16.
-- [ ] Institutional/fiscal claims confirmed (ORGANIZATION-CLAIMS-AUDIT.md): legal name, 501(c)(3) status, EIN display, email, phone, location.
-- [ ] Tax-deductibility sentence revised + approved (do not keep the universal promise).
+- [ ] Institutional/fiscal claims confirmed (ORGANIZATION-CLAIMS-AUDIT.md): legal name, ~~501(c)(3) status~~ **[x] confirmed 2026-10-25**, EIN display, email, phone, location.
+- [x] Tax-deductibility sentence revised (universal promise removed); status confirmed. Wording intentionally stays "may be tax-deductible to the extent allowed by law".
 - [ ] Leadership names/titles/spelling confirmed; **photo consent** obtained; advisory board confirmed.
 - [ ] No endorsement implied by DOE/NRC/labs/companies.
 
