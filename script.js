@@ -151,11 +151,11 @@ const I18N = {
   inv_eyebrow: "Participa",
   inv_title: "Ayuda a construir el futuro energético de Puerto Rico",
   inv_lead: "Como organización sin fines de lucro, funcionamos con el apoyo de la comunidad. Hay un lugar para todos en esta misión.",
-  inv1_t: "Donar", inv1_p: "Financia investigación y educación independientes. Cada aporte a nuestra 501(c)(3) es deducible de impuestos.", inv1_cta: "Donar",
+  inv1_t: "Donar", inv1_p: "Financia investigación y educación independientes. Cada aporte a nuestra 501(c)(3) es deducible de impuestos.", inv1_cta: "Escríbenos para donar",
   inv2_t: "Voluntariado", inv2_p: "Ingenieros, educadores, traductores y organizadores comunitarios: nos encantaría contar con tu talento.", inv2_cta: "Únete",
   inv3_t: "Corre la voz", inv3_p: "Comparte nuestra investigación, invítanos a hablar o inicia una conversación en tu comunidad.", inv3_cta: "Saber más",
-  news_t: "Mantente informado", news_p: "Recibe actualizaciones ocasionales sobre nuestra investigación y el futuro energético de Puerto Rico.",
-  news_label: "Correo electrónico", news_btn: "Suscribirse",
+  news_t: "Mantente informado", news_p: "Aún no está activo el registro en línea. Mientras tanto, escríbenos y te añadimos a nuestras novedades.",
+  news_label: "Correo electrónico", news_btn: "Escríbenos para novedades",
 
   cta_title: "¿Preguntas sobre la nuclear para Puerto Rico?",
   cta_p: "Siempre nos alegra conversar con comunidades, estudiantes, periodistas y quienes toman decisiones.",
@@ -167,53 +167,89 @@ const I18N = {
   foot_disc: "Sitio independiente creado por la comunidad, celebrando la misión del NAP."
 };
 
-/* store English originals on first load */
+/* store English originals on first load (textContent — never innerHTML) */
 const EN = {};
-document.querySelectorAll("[data-i18n]").forEach(el => { EN[el.dataset.i18n] = el.innerHTML; });
+document.querySelectorAll("[data-i18n]").forEach(el => { EN[el.dataset.i18n] = el.textContent; });
+
+/* per-language document metadata (title / description) */
+const htmlEl = document.documentElement;
+const metaDesc = document.querySelector('meta[name="description"]');
+const ogTitle = document.querySelector('meta[property="og:title"]');
+const ogDesc = document.querySelector('meta[property="og:description"]');
+const META = {
+  en: { title: document.title, desc: metaDesc ? metaDesc.getAttribute("content") : null },
+  es: { title: htmlEl.getAttribute("data-title-es"), desc: htmlEl.getAttribute("data-desc-es") }
+};
 
 let lang = localStorage.getItem("nap-lang") || "en";
 
 function applyLang(l) {
   lang = l;
-  document.documentElement.lang = l;
+  htmlEl.lang = l;
   const dict = l === "es" ? I18N : EN;
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.dataset.i18n;
-    if (dict[key] != null) el.innerHTML = dict[key];
+    if (dict[key] != null) el.textContent = dict[key];
   });
+  // keep document metadata in sync with the visible language
+  const m = META[l] || META.en;
+  if (m.title) document.title = m.title;
+  if (metaDesc && m.desc) metaDesc.setAttribute("content", m.desc);
+  if (ogTitle && m.title) ogTitle.setAttribute("content", m.title);
+  if (ogDesc && m.desc) ogDesc.setAttribute("content", m.desc);
   const btn = document.getElementById("lang-toggle");
-  if (btn) btn.textContent = l === "es" ? "EN" : "ES";
-  localStorage.setItem("nap-lang", l);
+  if (btn) {
+    btn.textContent = l === "es" ? "EN" : "ES";
+    btn.setAttribute("aria-label", l === "es" ? "Switch to English" : "Cambiar a español");
+  }
+  try { localStorage.setItem("nap-lang", l); } catch (e) {}
 }
 
-document.getElementById("lang-toggle").addEventListener("click", () => {
+const langToggle = document.getElementById("lang-toggle");
+if (langToggle) langToggle.addEventListener("click", () => {
   applyLang(lang === "es" ? "en" : "es");
 });
 
 /* ---------- Theme ---------- */
 const themeToggle = document.getElementById("theme-toggle");
-const savedTheme = localStorage.getItem("nap-theme")
-  || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+let savedTheme;
+try { savedTheme = localStorage.getItem("nap-theme"); } catch (e) { savedTheme = null; }
+if (!savedTheme) savedTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 document.documentElement.setAttribute("data-theme", savedTheme);
-themeToggle.addEventListener("click", () => {
+function syncThemeButton(t) {
+  if (!themeToggle) return;
+  themeToggle.setAttribute("aria-pressed", String(t === "dark"));
+  themeToggle.setAttribute("aria-label", t === "dark" ? "Switch to light mode" : "Switch to dark mode");
+}
+syncThemeButton(savedTheme);
+if (themeToggle) themeToggle.addEventListener("click", () => {
   const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
   document.documentElement.setAttribute("data-theme", next);
-  localStorage.setItem("nap-theme", next);
+  syncThemeButton(next);
+  try { localStorage.setItem("nap-theme", next); } catch (e) {}
 });
 
 /* ---------- Mobile nav ---------- */
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.getElementById("nav-links");
-navToggle.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("open");
-  navToggle.setAttribute("aria-expanded", String(open));
-});
-navLinks.querySelectorAll("a").forEach(a =>
-  a.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    navToggle.setAttribute("aria-expanded", "false");
-  })
-);
+function closeNav() {
+  if (!navLinks) return;
+  navLinks.classList.remove("open");
+  if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+}
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    const open = navLinks.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(open));
+  });
+  navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", closeNav));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && navLinks.classList.contains("open")) {
+      closeNav();
+      navToggle.focus();
+    }
+  });
+}
 
 /* ---------- Header shadow + back-to-top ---------- */
 const header = document.querySelector(".site-header");
@@ -230,13 +266,16 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 
-/* ---------- Animated counters ---------- */
+/* ---------- Animated counters (respects reduced motion) ---------- */
+const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 function animateCount(el) {
   const target = parseFloat(el.dataset.count);
   const decimals = parseInt(el.dataset.decimals || "0", 10);
   const prefix = el.dataset.prefix || "";
   const suffix = el.dataset.suffix || "";
   const plain = el.dataset.plain === "true";
+  const finalText = plain ? target.toString() : prefix + target.toFixed(decimals) + suffix;
+  if (prefersReduced) { el.textContent = finalText; return; }
   const dur = 1600;
   const start = performance.now();
   function tick(now) {
@@ -247,7 +286,7 @@ function animateCount(el) {
       ? Math.round(val).toString()
       : prefix + val.toFixed(decimals) + suffix;
     if (p < 1) requestAnimationFrame(tick);
-    else el.textContent = plain ? target.toString() : prefix + target.toFixed(decimals) + suffix;
+    else el.textContent = finalText;
   }
   requestAnimationFrame(tick);
 }
@@ -255,22 +294,6 @@ const countObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) { animateCount(e.target); countObserver.unobserve(e.target); } });
 }, { threshold: 0.5 });
 document.querySelectorAll(".stat-num").forEach(el => countObserver.observe(el));
-
-/* ---------- Newsletter (demo, no backend) ---------- */
-const newsForm = document.getElementById("news-form");
-if (newsForm) newsForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const input = document.getElementById("news-email");
-  const msg = document.getElementById("news-msg");
-  if (!input.value || !input.checkValidity()) {
-    msg.textContent = lang === "es" ? "Por favor introduce un correo válido." : "Please enter a valid email.";
-    return;
-  }
-  msg.textContent = lang === "es"
-    ? "¡Gracias! Te mantendremos informado."
-    : "Thanks! We'll keep you posted.";
-  input.value = "";
-});
 
 /* ---------- Email obfuscation (assembled at runtime) ---------- */
 document.querySelectorAll(".js-mail").forEach((a) => {

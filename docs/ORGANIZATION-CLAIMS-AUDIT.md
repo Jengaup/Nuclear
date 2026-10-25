@@ -1,0 +1,28 @@
+# ORGANIZATION-CLAIMS-AUDIT.md
+
+Institutional, fiscal, contact, and leadership claims shown on the site. **Nothing here is asserted as verified by me** — each needs owner confirmation before the site becomes official. I did not invent any of these; they come from the existing site/public sources and must be re-confirmed.
+
+| # | Claim on site | Where | Source seen | Confidence | Action |
+|---|---|---|---|---|---|
+| 1 | Name "Nuclear Alternative Project" / "NAP" | global | existing site | H | Confirm legal name vs. display name |
+| 2 | **501(c)(3)** nonprofit | footer, involved, about facts | existing site; Charity Navigator profile | M | **CONFIRM** status is current/in good standing |
+| 3 | **EIN 47-5353289** | footer titleblock, about facts | Charity Navigator (ein/475353289) | M | **CONFIRM** exact EIN; decide whether to display publicly |
+| 4 | Established **2015** | about, footer, JSON-LD | multiple | H | Confirm |
+| 5 | Email **info@nuclearalternativeproject.org** | contact, footer (obfuscated) | existing site | M | **CONFIRM** monitored mailbox |
+| 6 | Phone **(301) 401-5167** | contact, footer (tel:) | public listing | L–M | **CONFIRM** it's an org line meant for publication (area code 301 = Maryland, not PR) |
+| 7 | Location "**Puerto Rico · USA**" | footer, about | existing site | M | **CONFIRM** a publishable location; do not publish a personal address |
+| 8 | "Every contribution to our 501(c)(3) is **tax-deductible**" | Involved card (inv1_p) | existing site wording | **L** | **REVISE + APPROVE** — see below |
+| 9 | Leadership: **Jesus M. Nunez (CEO), Valerie Lugo (COO), Angel A. Reyes (CTO), Ramon Martinez (CNO)** + photos | About team | owner-provided names + photos (this project) | M–H | **CONFIRM** names/titles/spelling + photo usage consent |
+| 10 | Advisory board: **Eddie Guerra, Luis Reyes, Carmen Bigles, Paul Murphy, Juan Cajigas** | About | public reporting | L–M | **CONFIRM** current advisors + consent to list |
+| 11 | Founding story (Guerra, Reyes, Nuñez; Jesabel Rivera) | About | public reporting | M | **CONFIRM** narrative accuracy |
+| 12 | DOE funding / relationship | Work, Resources | DOE abstract, press | M | **CONFIRM** how to characterize (grantee, not endorsement) |
+| 13 | Subscriber/follower counts | **not shown** | — | — | Do NOT add "join N people" unless verifiable (per brief) |
+
+## Tax-deductibility wording (#8) — recommended fix, pending approval
+Current: *"Every contribution to our 501(c)(3) is tax-deductible."* — an unqualified, universal promise.
+Proposed: *"The Nuclear Alternative Project is a 501(c)(3) nonprofit; **donations may be tax-deductible to the extent allowed by law.** Please consult your tax advisor."*
+- **Not changed in code yet** (per instruction not to alter fiscal claims without validation). Apply only after the owner confirms status and approves wording.
+
+## Privacy guardrails (already honored)
+- No personal home addresses, private phones, or non-public personal data are published.
+- Phone and email shown are the organizational contacts already public on the current site, pending confirmation they should remain public.

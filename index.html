@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" data-title-es="Nuclear Alternative Project — Energía limpia y resiliente para Puerto Rico" data-desc-es="El Nuclear Alternative Project (NAP) es una organización sin fines de lucro de ingenieros puertorriqueños que estudia y educa sobre reactores nucleares avanzados —SMR y microrreactores— para un Puerto Rico limpio y resiliente.">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,10 +11,36 @@
   <meta property="og:title" content="Nuclear Alternative Project" />
   <meta property="og:description" content="Clean, resilient, reliable energy for Puerto Rico through advanced nuclear technology." />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Nuclear Alternative Project" />
+  <meta property="og:url" content="https://jengaup.github.io/Nuclear/" />
+  <meta property="og:image" content="https://jengaup.github.io/Nuclear/assets/apple-touch-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Nuclear Alternative Project" />
+  <meta name="twitter:description" content="Clean, resilient, reliable energy for Puerto Rico through advanced nuclear technology." />
+  <meta name="twitter:image" content="https://jengaup.github.io/Nuclear/assets/apple-touch-icon.png" />
+  <link rel="canonical" href="https://jengaup.github.io/Nuclear/" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["NGO", "Organization"],
+    "name": "Nuclear Alternative Project",
+    "alternateName": "NAP",
+    "url": "https://jengaup.github.io/Nuclear/",
+    "logo": "https://jengaup.github.io/Nuclear/assets/logo.png",
+    "foundingDate": "2015",
+    "email": "info@nuclearalternativeproject.org",
+    "telephone": "+1-301-401-5167",
+    "description": "Nonprofit of Puerto Rican engineers studying and educating about advanced nuclear reactors (SMRs and microreactors) for a clean, resilient Puerto Rico.",
+    "sameAs": [
+      "https://www.facebook.com/NuclearAlternativeProject/",
+      "https://www.linkedin.com/company/thenuclearalternativeproject"
+    ]
+  }
+  </script>
 </head>
 <body>
   <script>if(window.top!==window.self){try{window.top.location=window.self.location}catch(e){document.documentElement.style.display='none'}}document.documentElement.classList.remove('no-js');</script>
@@ -83,7 +109,7 @@
         <!-- Signature element: annotated reactor schematic -->
         <figure class="reactor-fig" aria-label="Annotated schematic of an advanced nuclear reactor">
           <figcaption class="fig-cap"><span data-i18n="fig_label">FIG. 01 — ADVANCED REACTOR</span></figcaption>
-          <svg viewBox="0 0 360 360" class="reactor" role="img">
+          <svg viewBox="0 0 360 360" class="reactor" role="img" aria-label="Schematic of an advanced nuclear reactor: a glowing central core inside concentric containment rings with orbiting particles.">
             <defs>
               <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
                 <stop offset="0%" stop-color="var(--cyan)" stop-opacity="0.95"/>
@@ -489,7 +515,7 @@
             <span class="card-tag">A / GIVE</span>
             <h3 data-i18n="inv1_t">Donate</h3>
             <p data-i18n="inv1_p">Fund independent research and education. Every contribution to our 501(c)(3) is tax-deductible.</p>
-            <a href="#contact" class="btn btn-primary btn-sm js-mail" data-eu="info" data-ed="nuclearalternativeproject.org" data-subj="Donation" data-i18n="inv1_cta">Donate</a>
+            <a href="#contact" class="btn btn-primary btn-sm js-mail" data-eu="info" data-ed="nuclearalternativeproject.org" data-subj="Donation inquiry" data-i18n="inv1_cta">Contact us about donating</a>
           </div>
           <div class="involve-card reveal">
             <span class="card-tag">B / JOIN</span>
@@ -509,14 +535,11 @@
           <div>
             <p class="mono-eyebrow" data-i18n="news_kicker">Signal · Newsletter</p>
             <h3 data-i18n="news_t">Stay informed</h3>
-            <p data-i18n="news_p">Get occasional updates on our research and Puerto Rico's energy future.</p>
+            <p data-i18n="news_p">Online sign-up isn't live yet. In the meantime, email us and we'll add you to our updates.</p>
           </div>
-          <form class="news-form" id="news-form" novalidate>
-            <label class="sr-only" for="news-email" data-i18n="news_label">Email address</label>
-            <input type="email" id="news-email" name="email" placeholder="you@example.com" required />
-            <button type="submit" class="btn btn-primary" data-i18n="news_btn">Subscribe</button>
-            <p class="news-msg" id="news-msg" role="status"></p>
-          </form>
+          <div class="news-cta">
+            <a class="btn btn-primary js-mail" data-eu="info" data-ed="nuclearalternativeproject.org" data-subj="Newsletter signup" href="#contact" data-i18n="news_btn">Email us to get updates</a>
+          </div>
         </div>
       </div>
     </section>

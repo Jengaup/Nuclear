@@ -5,24 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'self'; form-action 'self'" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="/Nuclear/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/Nuclear/assets/favicon-32.png" />
   <title>Page not found — Nuclear Alternative Project</title>
   <style>
     body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
-      font-family:system-ui,sans-serif;background:#0a1a35;color:#eaf3ff;text-align:center;padding:24px}
-    .wrap{max-width:460px}
-    h1{font-size:clamp(3rem,12vw,6rem);margin:0;color:#37e0c8}
-    p{color:#c3d6ec;font-size:1.05rem}
-    a{display:inline-block;margin-top:18px;padding:12px 26px;border-radius:999px;
-      background:#37e0c8;color:#05221d;font-weight:700;text-decoration:none}
+      font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#071c33;color:#eaf3ff;text-align:center;padding:24px}
+    .wrap{max-width:520px}
+    h1{font-size:clamp(3rem,12vw,6rem);margin:0;color:#57e6d9;letter-spacing:-.02em}
+    p{color:#c3d6ec;font-size:1.05rem;margin:.4rem 0}
+    p.es{color:#9db7d2;font-size:.95rem}
+    a{display:inline-block;margin-top:18px;padding:12px 26px;border-radius:4px;
+      background:#ff7a4d;color:#1a0a03;font-weight:700;text-decoration:none}
+    a:focus-visible{outline:2px solid #57e6d9;outline-offset:3px}
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>404</h1>
-    <p>The page you're looking for doesn't exist — but Puerto Rico's clean energy future still does.</p>
-    <a href="/">Back home</a>
+    <p lang="en">The page you're looking for doesn't exist — but Puerto Rico's clean energy future still does.</p>
+    <p lang="es" class="es">La página que buscas no existe, pero el futuro de energía limpia de Puerto Rico sí.</p>
+    <a href="/Nuclear/"><span lang="en">Back home</span> · <span lang="es">Volver al inicio</span></a>
   </div>
 </body>
 </html>
