@@ -151,7 +151,7 @@ const I18N = {
   inv_eyebrow: "Participa",
   inv_title: "Ayuda a construir el futuro energético de Puerto Rico",
   inv_lead: "Como organización sin fines de lucro, funcionamos con el apoyo de la comunidad. Hay un lugar para todos en esta misión.",
-  inv1_t: "Donar", inv1_p: "Financia investigación y educación independientes. Cada aporte a nuestra 501(c)(3) es deducible de impuestos.", inv1_cta: "Escríbenos para donar",
+  inv1_t: "Donar", inv1_p: "Financia investigación y educación independientes. Como organización 501(c)(3), los donativos pueden ser deducibles de impuestos en la medida en que lo permita la ley.", inv1_cta: "Escríbenos para donar",
   inv2_t: "Voluntariado", inv2_p: "Ingenieros, educadores, traductores y organizadores comunitarios: nos encantaría contar con tu talento.", inv2_cta: "Únete",
   inv3_t: "Corre la voz", inv3_p: "Comparte nuestra investigación, invítanos a hablar o inicia una conversación en tu comunidad.", inv3_cta: "Saber más",
   news_t: "Mantente informado", news_p: "Aún no está activo el registro en línea. Mientras tanto, escríbenos y te añadimos a nuestras novedades.",
